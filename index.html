@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hult</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/hult.css" />
+        <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/rotations.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid hult_header">
+            <div class="row">
+                <div class="col-xs-4 col-md-9">
+                    <div class="row">
+                        <div class="col-xs-10" id="container_logo"><img src="images/hult_small.png"></div>
+                        <div class="col-xs-2 col-sm-2"><a href="#" title="menu"><img src="images/app_menu.png" class="hult_menu"></a></div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-8 col-md-3">
+                    <div class="row">
+                     <div class="col-xs-12">
+                         <div class="hult_profile_opt">
+                             <a href="#" title="notifications"><img src="images/bell.png" id="bell"></a>
+                             <p>Jane Doe</p>
+                             <a href="#" title="edit your profile"><img src="images/triangle.png" id="triangle"></a>                             
+                         </div>
+                     </div>
+                   </div>
+                    <div class="row">
+                     <div class="col-xs-12 nopadding">
+                       <img src="images/avatar.png" id="avatar">
+                     </div>
+                   </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12"><span class="breadcrumb-home">Dashboard</span> \ Rotation setup</div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box-paragraph-fx">
+                    <h3>Define your rotation experience</h3>
+                    <p>Immerse yourself in up to three of the world's most exciting 
+                        cities and gain an<br/> invaluable global perspective – all without 
+                        interrupting your studies. 
+                    </p>                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <div class="box-top rot_london">Module A-C <span>(home)</span></div>
+                    <div class="box-img"><img src="images/box_uk_london.png"></div>
+                    <div class="box-desc"><h3>Your home campus</h3>
+                        <p>
+                            Students can choose from five home campuses – Boston, 
+                            San Francisco, London, or Dubai. Your home campus is 
+                            where you complete the core of your studies and where 
+                            you’ll be based for about ten months of the year. You 
+                            can choose to stay at your home campus for the entire 
+                            length of your program if you prefer not to rotate.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="box-top" id="box_module_d" data-class="none">Module D</div>
+                    <div class="box-img"><a href="#" data-id="module_d" id="module_d" role="button" data-toggle="modal" data-target="#rotationbox" class="modal_opener"><img src="images/box_noselected.png" class="unselected"></a></div>
+                    <div class="box-desc"><h3>Your first rotation</h3>
+                        <p>
+                            In your penultimate module, Module D, you have the 
+                            option of taking electives and spending six weeks at 
+                            any of Hult’s home campuses, or our rotation centers 
+                            in Shanghai and New York. You can choose to stay for 
+                            the next module and extend your stay to twelve weeks 
+                            if you prefer to only rotate once.
+                        </p>
+                    </div>                
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="box-top" id="box_module_e" data-class="none">Module E</div>
+                    <div class="box-img"><a href="#" data-id="module_e" id="module_e" role="button" data-toggle="modal" data-target="#rotationbox" class="modal_opener"><img src="images/box_noselected.png" class="unselected"></a></div>
+                    <div class="box-desc"><h3>Where to next?</h3>
+                        <p>
+                            For your final module, Module E, you can choose to 
+                            take electives and spend six weeks at any of Hult’s 
+                            seven campuses worldwide. That includes all five of 
+                            our home campuses, and our rotation centers in Shanghai, 
+                            New York, and Ashridge Estate, U.K.
+                        </p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        
+        <div class="hult_upper_footer">
+            <div class="hult_content">
+                <h3>Want to know more?</h3>
+                <p>Try our a virtual Global Campus Rotation experience, to get a 
+                    glimpse of how your year with Hult could shape up.</p>
+                <a href="#" class="hult_button">Try it now!</a>
+            </div>
+        </div>
+
+        <div class="hult_footer">
+            <div id="hult_left_box">
+                <p>Hult International Business School, Inc. is a non-profit 
+                corporation organized in the Commonwealth of Massachusetts 
+                and accredited by the NEASC.</p>
+                <p>Copyright &#169; 2015 Hult International Business School. 
+                All rights reserved. Privacy Policy</p>
+            </div>
+            <div id="hult_right_box"><img src="images/hult_logo.png"></div>
+            <span class="hult_clear"></span>
+        </div>
+        
+        <div class=container-fluid">    
+            <div id="rotationbox" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">Cancel &times;</button>
+                      <h4 class="modal-title">Select your campus rotation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Available Campuses for Module <span id="module_name"></span></p>
+                      <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="box-icon rot_boston"><a href="#" data-id="boston" class="addrotation"><img src="images/rotation_sign.png"></a></div>
+                                <div class="box-countrycity modal_boston"><h3>Boston</h3><p>United Kingdom</p></div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="box-icon rot_shanghai"><a href="#" data-id="shanghai" class="addrotation"><img src="images/rotation_sign.png"></a></div>
+                                <div class="box-countrycity modal_shanghai"><h3>Shanghai</h3><p>China</p></div>
+                            </div>
+                      </div>
+
+                      <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="box-icon rot_sanfrancisco"><a href="#" data-id="sanfrancisco" class="addrotation"><img src="images/rotation_sign.png"></a></div>
+                                <div class="box-countrycity modal_sanfrancisco"><h3>San Francisco</h3><p>United State of America</p></div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="box-icon rot_newyork"><a href="#" data-id="newyork" class="addrotation"><img src="images/rotation_sign.png"></a></div>
+                                <div class="box-countrycity modal_newyork"><h3>New York</h3><p>United State of America</p></div>
+                            </div>
+                      </div>
+
+                      <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="box-icon rot_london"><a href="#" data-id="london" class="addrotation"><img src="images/rotation_sign.png"></a></div>
+                                <div class="box-countrycity modal_london"><h3>London</h3><p>United Kingdom</p></div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="box-icon rot_ashridge"><a href="#" data-id="ashridge" class="addrotation"><img src="images/rotation_sign.png"></a></div>
+                                <div class="box-countrycity modal_ashridge"><h3>Ashridge</h3><p>United Kingdom</p></div>
+                            </div>
+                      </div>
+
+                      <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="box-icon rot_dubai"><a href="#" data-id="dubai" class="addrotation"><img src="images/rotation_sign.png"></a></div>
+                                <div class="box-countrycity modal_dubai"><h3>Dubai</h3><p>United Arab Emirates</p></div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="box-icon rot_norotation"><a href="#" data-id="norotation" class="addrotation"><img src="images/rotation_sign.png"></a></div>
+                                <div class="box-countrycity modal_norotation"><h3>No Rotation</h3><p>Stay in home campus</p></div>
+                            </div>
+                      </div>                      
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
