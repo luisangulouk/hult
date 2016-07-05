@@ -1,3 +1,20 @@
+@font-face {
+    font-family: BemboStd;
+    src: url("../fonts/BemboStd.otf");
+}
+
+html *{
+    font-family: BemboStd;
+}
+
+p {
+    font-size: 120%;
+}
+
+h3 {
+    font-size: 200%;
+}
+
 .full_screen {
     width: 100%;
     height: 100%;
@@ -100,12 +117,8 @@
     max-width: 1148px;
 }
 
-.box-top{
-    font-size:14px;
-    font-weight: 600;
-}
 .box-top span {
-    font-size:12px;
+    font-size:14px;
     font-weight: 600;
     color: #9d9d9d;
 }
@@ -198,11 +211,12 @@ align-center {
 /* rotations clases */
 
 .box-top{
+    font-size:17px;
     background-color: #8b8b8b;
     width:100%;
     height:30px;
     color:#FFFFFF;
-    padding: 3px 7px;
+    padding: 5px 9px;
 }
 
 .box-desc {

@@ -53,7 +53,7 @@ var g_rotation = {
             "it": "norotation",
             "country": "No Rotation",
             "city": "Stay in home campus",
-            "class": "rot_norotation",
+            "class": "rot_london",
             "image": "box_uk_london.png"        }]
 };
 
