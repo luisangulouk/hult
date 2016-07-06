@@ -310,9 +310,34 @@ align-center {
     margin: 20px; 
 }
 
+.hult_close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+  filter: alpha(opacity=10);
+  opacity: .8;
+}
+.hult_close:hover,
+.hult_close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity=20);
+  opacity: .4;
+}
+button.hult_close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
 .hult_upper_footer div p {
     margin-bottom: 30px;
-    
 }
 
 .hult_button {

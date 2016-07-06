@@ -12,7 +12,7 @@ var g_rotation = {
             "country": "United Kingdom",
             "city": "Ashridge",
             "class": "rot_ashridge",
-            "image": "box_uk_london.png"        }],
+            "image": "box_uk_ashridge.png"        }],
     "sanfrancisco": [    
         {   
             "id": "sanfrancisco",
@@ -26,14 +26,14 @@ var g_rotation = {
             "country": "United State of America",
             "city": "New York",
             "class": "rot_newyork",
-            "image": "box_us_sanfran.png"        }],
+            "image": "box_us_newyork.png"        }],
     "boston": [ 
         {
             "id": "boston",
             "country": "United State of America",
             "city": "Boston",
             "class": "rot_boston",
-            "image": "box_us_sanfran.png"        }],
+            "image": "box_us_boston.png"        }],
     "dubai": [ 
         {
             "id": "dubai",
