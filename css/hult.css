@@ -3,27 +3,24 @@
     src: url("../fonts/BemboStd.otf");
 }
 
-html *{
-    font-family: BemboStd;
-}
+html *{ font-family: BemboStd;}
 
-p {
-    font-size: 120%;
-}
+p { font-size: 120%;}
 
-h3 {
-    font-size: 200%;
-}
+h3 { font-size: 200%;}
 
 .full_screen {
     width: 100%;
     height: 100%;
 }
+
+@media (min-width: 601px) {
  .hult_header {
     background-image: url("../images/layout-top.png");
     background-size: 100% 160px;
     background-repeat: no-repeat;
  }
+}
  
  @media (max-width: 600px) {
     .hult_header {
@@ -75,19 +72,21 @@ h3 {
     display: inline-block;
 }
 
-.hult_footer {
-    background-image: url("../images/layout-bottom.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-color: #F0F0F0; 
-    min-height:250px;
-    position:relative;
-    left:0px;
-    bottom:0px;
-    width:100%;
-    padding:70px 10px 10px 10px;
-    overflow: hidden;
-    border:0px dotted blue;
+@media (min-width: 601px) {
+    .hult_footer {
+        background-image: url("../images/layout-bottom.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: #F0F0F0; 
+        min-height:250px;
+        position:relative;
+        left:0px;
+        bottom:0px;
+        width:100%;
+        padding:70px 10px 10px 10px;
+        overflow: hidden;
+        border:0px dotted blue;
+    }
 }
 
  @media (max-width: 600px) {
@@ -323,12 +322,21 @@ align-center {
     margin:1px 6px;
 }
 
-#rotationbox .box-countrycity p{color: #8b8b8b;}
+#rotationbox .box-countrycity p{
+    color: #8b8b8b;
+    margin-top: 0px;
+}
 
 #rotationbox .col-sm-6 div, .col-md-6 div{
     float:left;
     display:inline-block;
     margin:0px 0px 10px 0;
+}
+
+#rotationbox .addrotation, .addrotation:hover {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
 
 #rotationbox .row {
@@ -371,4 +379,9 @@ button.hult_close {
     color: white;
     padding: 15px 30px;
     border-radius: 8px;
+}
+
+.dotted_box {
+    border:1px dotted white;
+    background-color: green;
 }
