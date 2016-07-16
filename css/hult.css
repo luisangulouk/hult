@@ -234,6 +234,10 @@ align-center {
 
 /* rotations clases */
 
+.module_box {
+    max-width: 350px;
+}
+
 .box-top{
     font-size:17px;
     background-color: #8b8b8b;
@@ -382,6 +386,10 @@ button.hult_close {
 }
 
 .dotted_box {
-    border:1px dotted white;
-    background-color: green;
+    border:1px dotted blue;
+    background-color: grey;
+}
+
+.campus_box {
+    min-width: 230px;
 }
