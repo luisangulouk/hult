@@ -3,11 +3,16 @@
     src: url("../fonts/BemboStd.otf");
 }
 
+@font-face {
+    font-family: ProximaNova;
+    src: url("../fonts/ProximaNovaAltRegular.otf");
+}
+
 html *{ font-family: BemboStd;}
 
 p { font-size: 120%;}
 
-h3 { font-size: 200%;}
+h3 { font-size: 1.8em;}
 
 .full_screen {
     width: 100%;
@@ -263,6 +268,14 @@ align-center {
         padding: 15px 20px; 
         background-color: #F6ECE2;    
     }
+    .modal-dialog {
+        width:100%;
+        height:100%;
+        margin:0;
+    }
+    #rotationbox {
+        padding:0;
+    }
 }
 
 .box-img img {
@@ -378,11 +391,21 @@ button.hult_close {
 }
 
 .hult_button {
+    font-family: ProximaNova;
+    background: #993334; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #993334 , #cc3366); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #993334, #cc3366); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #993334, #cc3366); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #993334 , #cc3366); /* Standard syntax */
     margin: 20px 0px;
-    background-color: #8d333f;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 60px;
     border-radius: 8px;
+}
+
+.hult_button:hover {
+    text-decoration: none;
+    color:white;
 }
 
 .dotted_box {
