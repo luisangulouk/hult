@@ -58,11 +58,6 @@ h3 { font-size: 1.8em;}
     width: 100%;
 }
 
-#container_logo {
-    padding:0px;
-    border:0px dotted white;
-}
-
 #container_logo img{
     float:left;
     margin:0px;
@@ -78,6 +73,10 @@ h3 { font-size: 1.8em;}
 }
 
 @media (min-width: 601px) {
+    #container_logo {
+        padding:40px 0 0 0;
+        border:0px dotted white;
+    }
     .hult_footer {
         background-image: url("../images/layout-bottom.png");
         background-size: 100% 100%;
@@ -95,6 +94,10 @@ h3 { font-size: 1.8em;}
 }
 
  @media (max-width: 600px) {
+    #container_logo {
+       padding:2px 0 0 0;
+       border:0px dotted white;
+    }
     .hult_footer {
         background-image: url("../images/layout-bottom-sm.png");
         background-size: 100% 500px;
