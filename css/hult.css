@@ -25,6 +25,29 @@ h3 { font-size: 1.8em;}
     background-size: 100% 160px;
     background-repeat: no-repeat;
  }
+ .header-clear {
+        position:absolute;
+        top:130px;
+        border:0px solid blue;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 96px;
+        -ms-transform: skew(0deg,-2deg); /* IE 9 */
+        -webkit-transform: skew(0deg,-2deg); /* Safari */
+        transform: skew(0deg,-2deg); /* Standard syntax */
+        z-index: -1;
+    }
+    .header-grad {
+        position:absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 170px;
+        background: #993334; /* For browsers that do not support gradients */
+        background: linear-gradient(to right, #993333 , #663366); /* Standard syntax */
+        border: 0px solid black;
+        z-index: -1;
+    }
 }
  
  @media (max-width: 600px) {
@@ -33,6 +56,29 @@ h3 { font-size: 1.8em;}
         background-size: 100% 158px;
         background-repeat: no-repeat;
      }
+    .header-clear {
+        position:absolute;
+        top:130px;
+        border:0px solid blue;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 80px;
+        -ms-transform: skew(0deg,-10deg); /* IE 9 */
+        -webkit-transform: skew(0deg,-10deg); /* Safari */
+        transform: skew(0deg,-10deg); /* Standard syntax */
+        z-index: -1;
+    }
+    .header-grad {
+        position:absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 170px;
+        background: #993334; /* For browsers that do not support gradients */
+        background: linear-gradient(to right, #993333 , #663366); /* Standard syntax */
+        border: 0px solid black;
+        z-index: -1;
+    }
 }
 
  .hult_containers {
@@ -64,7 +110,7 @@ h3 { font-size: 1.8em;}
     border:0px dotted white;
     width: 100%;
     max-width: 150px;
-    min-width: 130px;
+    min-width: 105px;
 }
 
 #flexi_container {
@@ -95,7 +141,7 @@ h3 { font-size: 1.8em;}
 
  @media (max-width: 600px) {
     #container_logo {
-       padding:2px 0 0 0;
+       padding:5px 0 0 0;
        border:0px dotted white;
     }
     .hult_footer {
@@ -419,3 +465,5 @@ button.hult_close {
 .campus_box {
     min-width: 230px;
 }
+
+
